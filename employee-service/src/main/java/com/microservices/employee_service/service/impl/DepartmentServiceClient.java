@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class DepartmentServiceClient {
 
+    //testing
     private final FeignClientDepartmentService feignClientDepartmentService;
 
     @CircuitBreaker(name = "departmentCB", fallbackMethod = "departmentFallback")
